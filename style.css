@@ -8,12 +8,16 @@ body{
     font-size: 18px;
     background-color: hsl(185, 75%, 39%);
     overflow: hidden;
-}
-main{
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
+    justify-content: center;
+    background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: top -550px left -750px, right 125% bottom 200%;
+    padding-top: 0 25px;
+    text-align: center;
 }
 .img{
     max-width: 100%;
@@ -108,5 +112,9 @@ main{
     .footer-boxes{
         gap: 38px;
     }
-
+}
+@media screen and (min-width: 600px) {
+    body {
+      background-position: left -150px bottom 300px, right -110px top 400px;
+    }
 }
